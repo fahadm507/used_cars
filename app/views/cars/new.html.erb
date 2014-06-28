@@ -1,0 +1,10 @@
+
+<h3>Fill out the form to register a new car entry</h3>
+<%= bootstrap_form_for(@car) do |f| %>
+  <%= f.text_field :manufacturer, required: true %>
+  <%= f.text_field :color, required: true %>
+  <%= f.text_field :year , required: true %>
+  <%= f.text_field :mileage, required: true %>
+  <%= f.text_area :description %>
+  <%= f.submit "Register" %>
+<% end %>
