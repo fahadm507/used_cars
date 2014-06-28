@@ -10,7 +10,7 @@ class CarsController < ApplicationController
       redirect_to cars_path
     else
       flash[:notice] = "Your input has invalid information, try again"
-      render :new
+      render :'new'
     end
   end
 

@@ -36,7 +36,7 @@ group :development, :test do
   gem 'capybara'
 end
 gem 'pry-rails'
-gem 'factory_girl'
+gem "factory_girl_rails", "~> 4.0"
 gem 'bootstrap_form'
 gem "twitter-bootstrap-rails"
 # Use Capistrano for deployment
