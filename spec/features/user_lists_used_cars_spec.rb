@@ -1,8 +1,8 @@
 require 'spec_helper'
 
-feature 'user finds and fills out new car registration form' do
+feature 'user finds and fills out new car listing form' do
 
-  scenario 'fill out vehicle registration form with valid input' do
+  scenario 'fill out vehicle listing form with valid input' do
 
     visit new_car_path
 
@@ -15,11 +15,11 @@ feature 'user finds and fills out new car registration form' do
 
     click_button 'Register'
 
-    expect(page).to have_content "You've successfully registered your vehicle"
+    expect(page).to have_content "You've successfully listed your vehicle"
 
   end
 
-  scenario 'fill out the car registration from without invalid input' do
+  scenario 'fill out the car listing from without invalid input' do
     visit new_car_path
 
     fill_in 'Country', with: 'Germany'
@@ -37,7 +37,7 @@ feature 'user finds and fills out new car registration form' do
   scenario 'user submits empty form without required input' do
     visit new_car_path
 
-     fill_in 'Country', with: ''
+    fill_in 'Country', with: ''
     fill_in 'Manufacturer', with: ''
     fill_in 'Color', with: ''
     fill_in 'Year', with:''

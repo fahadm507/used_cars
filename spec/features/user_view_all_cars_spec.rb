@@ -2,11 +2,12 @@ require 'spec_helper'
 
 feature 'User views all listed used cars' do
 
-  scenario 'lists the ten most recent registered cars' do
+  scenario 'lists the ten most recent listed cars' do
 
     visit new_car_path
 
     cars = FactoryGirl.create_list(:car, 10)
+
     fill_in 'Country', with: 'Germany'
     fill_in 'Manufacturer', with: 'BMW'
     fill_in 'Color', with: 'blue'
