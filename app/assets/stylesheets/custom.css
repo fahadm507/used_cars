@@ -1,9 +1,8 @@
-.notice {
-  padding-left: 20px;
-  padding-top:10px;
+.btn .btn-large {
+  margin:20px;
 }
-
 .table {
   border-collapse: collapse;
+  margin-top:10px;
 }
 

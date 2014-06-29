@@ -1,4 +1,5 @@
 
+<%= link_to "Back To List Of Cars", cars_path, class: "btn btn-large" %>
 <h3>Fill out the form to register a new car entry</h3>
 <%= bootstrap_form_for(@car) do |f| %>
   <%= f.text_field :country %>
