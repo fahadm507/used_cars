@@ -1,4 +1,8 @@
 class CarsController < ApplicationController
+
+  def index
+    @cars = Car.all.order("created_at DESC")
+  end
   def new
     @car= Car.new
   end
@@ -17,6 +21,6 @@ class CarsController < ApplicationController
   private
 
   def car_params
-    params.require(:car).permit(:manufacturer, :color, :year, :mileage, :description)
+    params.require(:car).permit(:manufacturer, :color, :year, :mileage, :description, :country)
   end
 end

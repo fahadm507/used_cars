@@ -1,6 +1,7 @@
 
 <h3>Fill out the form to register a new car entry</h3>
 <%= bootstrap_form_for(@car) do |f| %>
+  <%= f.text_field :country %>
   <%= f.text_field :manufacturer %>
   <%= f.text_field :color %>
   <%= f.text_field :year  %>
