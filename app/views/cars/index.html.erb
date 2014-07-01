@@ -1,0 +1,27 @@
+
+<h3 class="text-center">Most recent used cars Listing</h3>
+<%= link_to "List A Car", new_car_path, class: "btn-success btn-large" %>
+<table class="table table-hover">
+   <thead>
+      <tr>
+         <th>Manufacturer</th>
+         <th>Country</th>
+         <th>Color</th>
+         <th>Year</th>
+         <th>Mileage</th>
+         <th>Description
+      </tr>
+   </thead>
+   <tbody>
+   <% @cars.each do |car| %>
+      <tr>
+         <td><%= car.manufacturer %></td>
+         <td><%= car.country %></td>
+         <td><%= car.color %></td>
+         <td><%= car.year %></td>
+         <td><%= car.mileage %></td>
+         <td><%= car.description %></td>
+      </tr>
+   <% end%>
+   </tbody>
+</table>

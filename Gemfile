@@ -31,7 +31,14 @@ gem 'spring',        group: :development
 
 # Use unicorn as the app server
 # gem 'unicorn'
-
+group :development, :test do
+  gem 'rspec-rails', '~> 2.0'
+  gem 'capybara'
+end
+gem 'pry-rails'
+gem "factory_girl_rails", "~> 4.0"
+gem 'bootstrap_form'
+gem "twitter-bootstrap-rails"
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
 
